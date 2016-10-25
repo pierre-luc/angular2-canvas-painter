@@ -1,0 +1,7 @@
+<ul class="pwColorSelector">
+  <li *ngFor="let color of colorList"
+      class="pwColor"
+      [ngClass]="{'active': (selectedColor === color)}"
+      [ngStyle]="{'background-color':color}"
+      (click)="selectedColor = color"></li>
+</ul>

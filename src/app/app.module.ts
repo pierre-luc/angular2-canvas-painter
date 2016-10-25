@@ -4,17 +4,24 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
+import { PwColorSelectorComponent } from './pw-color-selector/pw-color-selector.component';
+import { PwCanvasPaintComponent } from './pw-canvas-paint/pw-canvas-paint.component';
+import {Logger, LOG_LOGGER_PROVIDERS} from "angular2-logger/core";
+import { PwWidthSelectorComponent } from './pw-width-selector/pw-width-selector.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    PwColorSelectorComponent,
+    PwCanvasPaintComponent,
+    PwWidthSelectorComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpModule
   ],
-  providers: [],
+  providers: [LOG_LOGGER_PROVIDERS],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

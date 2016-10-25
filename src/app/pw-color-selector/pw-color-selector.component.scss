@@ -1,0 +1,17 @@
+.pwColorSelector {
+  .pwColor {
+    $size: 50px;
+    border-radius: $size;
+    border: solid 2px transparent;
+    width: $size;
+    height: $size;
+    cursor: pointer;
+    float: left;
+    margin: 5px;
+    list-style: none;
+
+    &.active {
+      border-color: #000;
+    }
+  }
+}

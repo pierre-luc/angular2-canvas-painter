@@ -1,3 +1,9 @@
-<h1>
-  {{title}}
-</h1>
+<pw-canvas [(color)]="options.color"
+           [width]="options.width"
+           [height]="options.height"
+           [(lineWidth)]="options.lineWidth">
+</pw-canvas>
+<pw-color-selector [colorList]="['#000', '#00f', '#0f0', '#f00', '#f90']"
+                   [(selectedColor)]="options.color">
+</pw-color-selector>
+<pw-width-selector [(value)]="options.lineWidth"></pw-width-selector>
