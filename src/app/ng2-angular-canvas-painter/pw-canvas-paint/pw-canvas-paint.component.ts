@@ -2,9 +2,10 @@ import {
   Component, OnInit, ElementRef, Input, OnChanges, SimpleChanges, SimpleChange,
   EventEmitter, Output
 } from '@angular/core';
-import {FireEventService} from "../fire-event.service";
+
 import {BrowserDomAdapter} from "@angular/platform-browser/src/browser/browser_adapter";
 import {Logger} from "angular2-logger/core";
+import {FireEventService} from "../../fire-event.service";
 
 @Component({
   selector: 'pw-canvas',

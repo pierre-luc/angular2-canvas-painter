@@ -1,5 +1,5 @@
 import {Component, OnInit, Input, Output, EventEmitter} from '@angular/core';
-import {FireEventService} from "../fire-event.service";
+import {FireEventService} from "../../fire-event.service";
 import {Logger} from "angular2-logger/core";
 
 @Component({
